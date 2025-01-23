@@ -225,4 +225,8 @@ pyrightconfig.json
 .history
 .ionide
 
+### Ignore pytorch data
+# Cap 4
+data/
+
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,python
