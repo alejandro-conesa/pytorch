@@ -52,12 +52,12 @@ def epoca_test(modelo, test_loader, dispositivo):
             etiquetas = etiquetas.to(dispositivo)
 
             salidas = modelo(imagenes)
-            salidas = salidas.softmax(dim=1)
+            salidas = salidas.softmax(dim=1) # comprobar si esta parte es correcta (nombre variables)
 
             prediccion = salidas.argmax(dim=1)
 
             total += etiquetas.size(0)
-            correcto += (prediccion == etiquetas).sum().item()
+            correcto += (prediccion == etiquetas).sum().item() # comprobar que hace esta línea
         
         exactitud = 100 * correcto / total
 
