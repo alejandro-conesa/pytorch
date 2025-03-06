@@ -113,5 +113,3 @@ plt.show()
 test_acc = epoca_test(modelo, test_loader, dispositivo)
 print(f'Exactitud test: {test_acc:.2f}%')
 torch.save(modelo.state_dict(), 'pesos_cap_5.pth')
-
-
